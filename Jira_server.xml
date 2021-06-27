@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Jira_server</name>
+    </assembly>
+    <members>
+        <member name="T:Jira_server.Controllers.AuthController">
+            <summary>
+            授权控制器
+            </summary>
+        </member>
+        <member name="M:Jira_server.Controllers.AuthController.Register(Jira_server.Models.UserInfo)">
+            <summary>
+            注册
+            </summary>
+            <param name="val"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Jira_server.Models.GetLoginDto">
+            <summary>
+            登录入参
+            </summary>
+        </member>
+        <member name="P:Jira_server.Models.GetLoginDto.UserName">
+             <summary>
+            用户名
+             </summary>
+        </member>
+        <member name="P:Jira_server.Models.GetLoginDto.Pass">
+             <summary>
+            密码
+             </summary>
+        </member>
+        <member name="F:Jira_server.Utils.ConfigHelper._configuration">
+            <summary>
+            The configuration
+            </summary>
+        </member>
+        <member name="M:Jira_server.Utils.ConfigHelper.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jira_server.Utils.ConfigHelper"/> class.
+            </summary>
+        </member>
+        <member name="M:Jira_server.Utils.ConfigHelper.GetConfig(System.String)">
+            <summary>
+            Gets the configuration.
+            </summary>
+            <param name="key">The key.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jira_server.Utils.ConfigHelper.GetConfigToString(System.String)">
+             <summary>
+            获取字符串配置
+             </summary>
+             <param name="key">The key.</param>
+             <returns></returns>
+        </member>
+        <member name="M:Jira_server.Utils.ConfigHelper.GetConfigToInt(System.String)">
+            <summary>
+            查询配置，返回整数
+            </summary>
+            <param name="key">键名</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jira_server.Utils.ConfigHelper.GetConfigToBool(System.String)">
+            <summary>
+            查询配置，返回整数
+            </summary>
+            <param name="key">键名</param>
+            <returns></returns>
+        </member>
+        <member name="T:Jira_server.Utils.JwtHelper">
+            <summary>
+            jwt操作类
+            </summary>
+        </member>
+        <member name="M:Jira_server.Utils.JwtHelper.BuildJwtToken(System.Collections.Generic.IEnumerable{System.Security.Claims.Claim})">
+            <summary>
+            创建jwttoken
+            </summary>
+            <param name="claims">The claims.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jira_server.Utils.JwtHelper.GetTimeStamp(System.DateTime)">
+            <summary>
+            获取时间戳  13位
+            </summary>
+            <param name="dtime">The dtime.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
